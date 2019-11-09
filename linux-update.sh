@@ -1,6 +1,6 @@
 # update centos environment
 
-sudo yum install epel-release 
+sudo yum install -y epel-release 
 
 sudo yum update -y
 
@@ -13,6 +13,6 @@ sudo yum-config-manager \
     --add-repo \
     https://download.docker.com/linux/centos/docker-ce.repo
 
-sudo yum install docker-ce docker-ce-cli containerd.io
+sudo yum install -y docker-ce docker-ce-cli containerd.io 
 
 # install nginx

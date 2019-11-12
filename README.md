@@ -22,3 +22,9 @@ curl -sSL https://raw.githubusercontent.com/KalibGao/ShellScripts/master/git-ins
 curl -sSL https://raw.githubusercontent.com/KalibGao/ShellScripts/master/docker-install.sh | sudo sh
 ```
 
+- install nginx
+
+```
+curl -sSL https://raw.githubusercontent.com/KalibGao/ShellScripts/master/nginx-install.sh | sudo sh
+```
+

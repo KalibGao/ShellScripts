@@ -1,11 +1,6 @@
 # system update
 curl -sSL https://raw.githubusercontent.com/KalibGao/ShellScripts/master/linux-update.sh | sudo sh 
 
-# install git
-
-curl -sSL https://raw.githubusercontent.com/KalibGao/ShellScripts/master/git-install.sh | sudo sh
-
-
 # install docker 
 curl -sSL https://raw.githubusercontent.com/KalibGao/ShellScripts/master/docker-install.sh | sudo sh
 

@@ -31,6 +31,6 @@ EOF
 
 sudo yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
 
-sudo systectl enable kubectl 
+systemctl enable --now kubelet
 
 

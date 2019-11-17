@@ -48,4 +48,16 @@ Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
   https://kubernetes.io/docs/concepts/cluster-administration/addons/
 
 
-## Install Kubernetes Dashboard
+## Install Kubernetes Addon 插件
+
+### Networking
+
+- 安装 `flannel`
+```
+kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+```
+
+### Dashboard
+
+
+### 

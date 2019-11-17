@@ -5,4 +5,4 @@ sudo yum install -y epel-release
 sudo yum update -y
 
 # install commonly used tools 
-yum install -y wget 
+sudo yum install -y wget 

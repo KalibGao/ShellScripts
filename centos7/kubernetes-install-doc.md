@@ -21,7 +21,7 @@ curl -sSL https://raw.githubusercontent.com/KalibGao/ShellScripts/master/centos7
 kubeadm init \
     --apiserver-advertise-address=172.26.188.102 \
     --image-repository registry.aliyuncs.com/google_containers \
-    --kubernetes-version v1.16.2 \
+    --kubernetes-version v1.16.3 \
     --pod-network-cidr=10.244.0.0/16
 ```
 
@@ -55,9 +55,11 @@ Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
 - 安装 `flannel`
 ```
 kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+
+# 带RBAC功能
+kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/k8s-manifests/kube-flannel-rbac.yml
 ```
 
 ### Dashboard
-
 
 ### 

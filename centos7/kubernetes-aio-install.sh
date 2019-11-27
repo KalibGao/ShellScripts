@@ -4,11 +4,8 @@ curl -sSL https://raw.githubusercontent.com/KalibGao/ShellScripts/master/centos7
 # install docker 
 curl -sSL https://raw.githubusercontent.com/KalibGao/ShellScripts/master/centos7/docker-install.sh | sudo sh
 
-
-
 # install kubernetes 
-
-curl -sSL https://raw.githubusercontent.com/KalibGao/ShellScripts/master/kubernetes-install.sh | sudo sh
+curl -sSL https://raw.githubusercontent.com/KalibGao/ShellScripts/master/centos7/kubernetes-install.sh | sudo sh
 
 
 

@@ -14,7 +14,7 @@ sudo tee /etc/docker/daemon.json <<-'EOF'
 {
   "registry-mirrors": ["https://c8zb9ksc.mirror.aliyuncs.com"]
 }
-EOF 
+EOF
 
 sudo systemctl daemon-reload
   

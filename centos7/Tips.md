@@ -14,3 +14,12 @@ cat <<EOF >> /etc/hosts
 172.26.188.103 k8s-node2
 172.26.188.104 k8s-node3
 EOF
+
+
+### kubectl 尝试使用 `bash-completion`
+ 需要尝试下
+```
+sudo yum install -y bash-completion
+sudo echo "source <(kubectl completion bash)" >> ~/.bashrc
+source ~/.bashrc
+```

@@ -9,6 +9,14 @@ sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/cen
 
 sudo yum install -y docker-ce docker-ce-cli containerd.io 
 
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+  "registry-mirrors": ["https://c8zb9ksc.mirror.aliyuncs.com"]
+}
+EOF 
+
+sudo systemctl daemon-reload
+  
 sudo systemctl enable docker  | sudo systemctl restart docker
 
 

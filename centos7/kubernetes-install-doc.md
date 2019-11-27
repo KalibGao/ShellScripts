@@ -15,6 +15,10 @@ curl -sSL https://raw.githubusercontent.com/KalibGao/ShellScripts/master/centos7
 curl -sSL https://raw.githubusercontent.com/KalibGao/ShellScripts/master/centos7/kubernetes-install.sh | sudo sh
 ```
 
+### 以上步骤可以合并在一起执行
+```
+curl -sSL https://raw.githubusercontent.com/KalibGao/ShellScripts/master/centos7/kubernetes-aio-install.sh | sudo sh 
+```
 
 初始化Kubernetes (自动配置阿里云镜像仓库)
 ```
@@ -46,6 +50,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 You should now deploy a pod network to the cluster.
 Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
   https://kubernetes.io/docs/concepts/cluster-administration/addons/
+
 
 
 ## Install Kubernetes Addon 插件

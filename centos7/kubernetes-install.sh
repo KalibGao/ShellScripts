@@ -14,7 +14,8 @@ EOF
 
 
 # disable firewall
-sudo systemctl stop firewalld.service | sudo systemctl disable firewalld.service 
+sudo systemctl stop firewalld.service
+sudo systemctl disable firewalld.service
 
 # swapoff -a
 
@@ -32,4 +33,4 @@ EOF
 sudo yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
 
 sudo systemctl enable --now kubelet
-
+sudo systemctl start kubelet

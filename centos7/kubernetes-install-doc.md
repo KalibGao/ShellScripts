@@ -59,6 +59,9 @@ Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
 
 - 安装 `flannel`
 ```
+# 用七牛云镜像替换国外镜像, 使用前请配置镜像版本号
+curl -sSL https://raw.githubusercontent.com/KalibGao/ShellScripts/master/centos7/flannel-image-install.sh | sudo sh
+
 kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 
 # 带RBAC功能

@@ -115,6 +115,8 @@ spec:
             - containerPort: 8443
               protocol: TCP
           args:
+            - --enable-skip-login
+            - --disable-settings-authorizer
             - --auto-generate-certificates
             # Uncomment the following line to manually specify Kubernetes API server Host
             # If not specified, Dashboard will attempt to auto discover the API server and connect
@@ -156,8 +158,10 @@ metadata:
   name: kubernetes-dashboard
   namespace: kube-system
 spec:
+  type: NodePort
   ports:
     - port: 443
       targetPort: 8443
+      nodePort: 30001
   selector:
     k8s-app: kubernetes-dashboard

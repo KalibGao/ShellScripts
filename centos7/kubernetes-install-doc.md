@@ -70,4 +70,18 @@ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documen
 
 ### Dashboard
 
+- 安装用户权限
+
+```
+kubectl apply -f https://raw.githubusercontent.com/KalibGao/ShellScripts/master/centos7/dashboard-adminuser.yaml 
+
+kubectl apply -f https://raw.githubusercontent.com/KalibGao/ShellScripts/master/centos7/dashboard-adminuser-rolebinding.yaml 
+```
+
+-- 暴露给外部用户访问
+
+```
+kubectl proxy --address='0.0.0.0'  --accept-hosts='^*$' --port=8001
+```
+
 ### 
